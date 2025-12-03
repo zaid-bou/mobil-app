@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function EducationLevelPage() {
+  const navigate = useNavigate();
   return (
     <>
       <style>{`
@@ -100,6 +102,7 @@ export default function EducationLevelPage() {
               border: "none",
               cursor: "pointer",
             }}
+            onClick={() => navigate("/course")}
           >
             <img
               src="/1.png"
@@ -134,6 +137,7 @@ export default function EducationLevelPage() {
               border: "none",
               cursor: "pointer",
             }}
+            onClick={() => navigate("/course")}
           >
             <img
               src="/2.png"
@@ -150,7 +154,7 @@ export default function EducationLevelPage() {
                 color: "#000000",
               }}
             >
-            Second Year
+              Second Year
             </span>
           </button>
 
@@ -168,6 +172,7 @@ export default function EducationLevelPage() {
               border: "none",
               cursor: "pointer",
             }}
+            onClick={() => navigate("/course")}
           >
             <img
               src="/3.png"
@@ -205,12 +210,11 @@ export default function EducationLevelPage() {
             className="w-full h-full object-contain"
           />
 
-		  <img
+          <img
             src="/stickfigure.png"
             alt="Character"
             className="w-full h-full object-contain"
           />
-		  
         </div>
       </div>
     </>

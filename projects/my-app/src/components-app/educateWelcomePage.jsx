@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function EducateWelcomePage() {
+  const navigate  = useNavigate();
   return (
     <>
       <style>{`
@@ -88,6 +90,7 @@ export default function EducateWelcomePage() {
               borderRadius: "50px",
               cursor: "pointer",
             }}
+            onClick={() => navigate("/levels")}
           >
             <span
               className="aclonica-font"
